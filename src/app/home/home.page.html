@@ -4,8 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content scrollEvents="true">
-  <!-- <ion-grid fixed> -->
+<ion-content>
   <ion-virtual-scroll #vScroll [items]="contacts" [headerFn]="myHeaderFn">
     <ion-item-divider *virtualHeader="let header">
       {{ header }}
@@ -27,5 +26,4 @@
       {{letter}}
     </ion-item>
   </ion-list>
-  <!-- </ion-grid> -->
 </ion-content>
